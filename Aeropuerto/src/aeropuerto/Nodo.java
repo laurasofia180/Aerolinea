@@ -14,10 +14,23 @@ public class Nodo {
      int Dato;
     Nodo sig;
     Nodo ant;
-    Nodo (int a)
+    public Nodo (int entrada)
     {
-        this.Dato=a;
-        this.sig=null;
-        this.ant=null;
+        Dato = entrada;
+        sig = ant = null;
+        
+        //this.Dato=a;
+        //this.sig=null;
+        //this.ant=null;
+    }
+    public int getDato(){
+        return Dato;
+    }
+    public Nodo getEnlace(){
+        return sig;
+    }
+    
+    public void setEnlace(Nodo sig){
+        this.sig = sig;
     }
 }

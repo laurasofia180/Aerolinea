@@ -13,6 +13,7 @@ package aeropuerto;
 public class ListaVuelo {
     Nodo primero;
     Nodo ultimo;
+    Nodo nuevoNodo;
     private int num;
 
     ListaVuelo() {
@@ -62,7 +63,15 @@ public class ListaVuelo {
     }
         System.out.println(true);
     }
+   
+    
     public void Insertar(int Dato){
-        
+        if(ultimo == null){
+        ultimo = nuevoNodo;
+        }else{
+        if (ultimo != null){
+        ultimo.sig= nuevoNodo;
+         }
+       }
     }
 }
