@@ -40,9 +40,8 @@ public class Nodo {
         this.sig = sig;
     }
 
-    public class Lectura_Archivos {
-
-        public void main(String args[]) {
+    
+ public void LectorArchivos(String args[]) {
             String fichero = args[0];
             try {
                 try (FileReader fr = new FileReader(fichero)) {
@@ -58,4 +57,4 @@ public class Nodo {
             }
         }
     }
-}
+
