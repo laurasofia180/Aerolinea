@@ -39,22 +39,5 @@ public class Nodo {
     public void setEnlace(Nodo sig) {
         this.sig = sig;
     }
-
-    
- public void LectorArchivos(String args[]) {
-            String fichero = args[0];
-            try {
-                try (FileReader fr = new FileReader(fichero)) {
-                    BufferedReader br = new BufferedReader(fr);
-
-                    String Linea;
-                    while ((Linea = br.readLine()) != null) {
-                        System.out.println(Linea);
-                    }
-                }
-            } catch (IOException e) {
-                System.out.println("Error en lectura del archivo");
-            }
-        }
     }
 
