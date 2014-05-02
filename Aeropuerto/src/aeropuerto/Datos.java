@@ -14,14 +14,14 @@ public class Datos {
     
     public String Origen;
     public String Destino;
-    public String NombreUsuario;
-    public String ApellidoUsuario;
-    private int IdUsuario;
-    private int TelefonoUsurio;
-    public int horaSalida;
-    public int horaLlegada;
-    private int CapacidadAvion;
-    public int ValorPasaje;
+    public String Nombres;
+    public String Apellidos;
+    private String ID;
+    private String Telefono;
+    public String horaSalida;
+    public String horaLlegada;
+    private String CapacidadAvion;
+    public String ValorPasaje;
    
     
     public String getOrigen(){
@@ -32,25 +32,36 @@ public class Datos {
             return Destino;
     }
     
-    public String getNombreUsuario(){
-        return NombreUsuario;
+    public String getNombres(){
+        return Nombres;
     }
     
-    public String getApellidoUsuario(){
-        return ApellidoUsuario;
+    public String getApellidos(){
+        return Apellidos;
     }
     
-    public int gethoraSalida(){       
+    public String gethoraSalida(){       
         return horaSalida;
     }
     
-    public int gethoraLlegada(){        
+    public String gethoraLlegada(){        
         return horaLlegada;
     }
     
-    public int getValorPasaje(){       
+    public String getValorPasaje(){       
         return ValorPasaje;
     }
+    
+     private String getCapacidadAvion(){       
+        return CapacidadAvion;
+    }
+     private String getID(){       
+        return ID;
+    }
+       private String getTelefono(){       
+        return Telefono;
+    }
+     
 }
  
 

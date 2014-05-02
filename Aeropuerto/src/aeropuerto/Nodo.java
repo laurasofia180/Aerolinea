@@ -8,6 +8,7 @@ package aeropuerto;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -15,9 +16,16 @@ import java.io.IOException;
  */
 public class Nodo {
 
+    private static boolean add(Datos datos) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     int Dato;
     Nodo sig;
     Nodo ant;
+    
+    Nodo nodo = new Nodo();
+    Datos datos = new Datos();
 
     public Nodo(int entrada) {
         Dato = entrada;
@@ -26,6 +34,10 @@ public class Nodo {
         //this.Dato=a;
         //this.sig=null;
         //this.ant=null;
+    }
+
+    private Nodo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public int getDato() {
@@ -39,5 +51,14 @@ public class Nodo {
     public void setEnlace(Nodo sig) {
         this.sig = sig;
     }
-    }
+   
+    public void GuardarDatos(Datos datos){
+        if(Nodo.add(datos)){
+            
+            JOptionPane.showMessageDialog(null,"Los datos fueron agregados correctamente");
+        
+    } 
+        
+   }
+}
 
