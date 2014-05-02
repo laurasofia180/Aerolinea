@@ -246,7 +246,7 @@ public class InterfazVuelo extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Por favor ingrese el telefono  de el pasajero");
             return;
         
-        
+         }
          
        
     }//GEN-LAST:event_ButIngresarPasajeroActionPerformed
