@@ -277,7 +277,7 @@ public class InterfazVuelo extends javax.swing.JFrame {
          Apellidos=txtApellidos.getText ();
          Telefono=txtTelefono.getText ();
          ID=txtID.getText ();
-       JOptionPane.showMessageDialog(null,"Nombres:"+Nombre+"Apellidos:"+Apellidos+"Telefono:"+Telefono+"ID:"+ID);
+       JOptionPane.showMessageDialog(null,"El Pasajero ha sido ingresado correctamente");
     }//GEN-LAST:event_ButIngresarPasajeroActionPerformed
 
     private void ButRevisarListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButRevisarListaActionPerformed
@@ -294,32 +294,19 @@ public class InterfazVuelo extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNombresActionPerformed
 
     private void txtNombresKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombresKeyTyped
-        char TipoTecla = evt.getKeyChar();
-        if(Character.isDigit(TipoTecla)){
-            evt.consume();
-        }
+       
     }//GEN-LAST:event_txtNombresKeyTyped
 
     private void txtApellidosKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtApellidosKeyTyped
-        char TipoTecla = evt.getKeyChar();
-        if(Character.isDigit(TipoTecla)){
-            evt.consume();
-        }
+       
     }//GEN-LAST:event_txtApellidosKeyTyped
 
     private void txtIDKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtIDKeyTyped
-        char TipoTecla = evt.getKeyChar();
-        if(!Character.isDigit(TipoTecla)){
-            evt.consume();
-        }
         
     }//GEN-LAST:event_txtIDKeyTyped
 
     private void txtTelefonoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelefonoKeyTyped
-        char TipoTecla = evt.getKeyChar();
-        if(!Character.isDigit(TipoTecla)){
-            evt.consume();
-        }
+        // TODO add your handling code here:
     }//GEN-LAST:event_txtTelefonoKeyTyped
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
