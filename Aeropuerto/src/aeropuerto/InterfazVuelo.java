@@ -231,7 +231,7 @@ public class InterfazVuelo extends javax.swing.JFrame {
     }//GEN-LAST:event_ButImportarDatosActionPerformed
 
     private void ButIngresarPasajeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButIngresarPasajeroActionPerformed
-      /*  if (txtNombres.getText().equals("")){
+        /*if (txtNombres.getText().equals("")){
             JOptionPanel.showMessageDialog(null,"Por favor ingrese el nombre de el pasajero");
             return;
         }
@@ -246,7 +246,10 @@ public class InterfazVuelo extends javax.swing.JFrame {
          if (txtTelefono.getText().equals("")){
             JOptionPanel.showMessageDialog(null,"Por favor ingrese el telefono  de el pasajero");
             return;
-        }*/
+        
+        */
+         
+       
     }//GEN-LAST:event_ButIngresarPasajeroActionPerformed
 
     private void ButRevisarListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButRevisarListaActionPerformed
