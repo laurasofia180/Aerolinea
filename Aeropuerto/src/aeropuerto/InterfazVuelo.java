@@ -243,12 +243,14 @@ public class InterfazVuelo extends javax.swing.JFrame {
             return;
         }
          if (txtTelefono.getText().equals("")){
-            JOptionPane.showMessageDialog(null,"Por favor ingrese el telefono  de el pasajero");
-            return;
-        
+            JOptionPane.showMessageDialog(null,"Por favor ingrese el telefono  de el pasajero");        
          }
-         
-       
+         String Nombres,Apellidos,Telefono,ID;
+         Nombres=txtNombres.getText ();
+         Apellidos=txtApellidos.getText ();
+         Telefono=txtTelefono.getText ();
+         ID=txtID.getText ();
+       JOptionPane.showMessageDialog(null,"Nombres:"+Nombre+"Apellidos:"+Apellidos+"Telefono:"+Telefono+"ID:"+ID);
     }//GEN-LAST:event_ButIngresarPasajeroActionPerformed
 
     private void ButRevisarListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButRevisarListaActionPerformed
