@@ -49,6 +49,7 @@ public class InterfazVuelo extends javax.swing.JFrame {
         ButIngresarPasajero = new javax.swing.JButton();
         ButRevisarLista = new javax.swing.JButton();
         Ruta = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         ButImportarDatos.setText("Importar datos");
         ButImportarDatos.addActionListener(new java.awt.event.ActionListener() {
@@ -107,6 +108,8 @@ public class InterfazVuelo extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("Ingrese porfavor la dirección donde se encuentra el archivo con la información.");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -115,66 +118,67 @@ public class InterfazVuelo extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(ButImportarDatos)
-                                .addGap(29, 29, 29)
-                                .addComponent(Ruta, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(ButConfirmar))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addComponent(jLabel9)
-                                    .addGap(330, 330, 330))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(Nombre)
-                                        .addComponent(InfoPasajero, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(Apellido)
-                                        .addComponent(Id)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(Tel)
-                                            .addGap(32, 32, 32)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(txtNombres)
-                                                .addComponent(txtID)
-                                                .addComponent(txtTelefono)
-                                                .addComponent(txtApellidos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addComponent(ButIngresarPasajero))
-                                    .addGap(142, 142, 142)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(ButRevisarLista)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(ButCancelar)
-                                .addGap(35, 35, 35))))))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(ButImportarDatos)
+                                    .addGap(29, 29, 29)
+                                    .addComponent(Ruta, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(ButConfirmar)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(jLabel9)
+                            .addGap(330, 330, 330))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Nombre)
+                                .addComponent(Apellido)
+                                .addComponent(Id))
+                            .addGap(413, 413, 413))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(Tel)
+                            .addGap(32, 32, 32)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(InfoPasajero, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtID)
+                                    .addComponent(txtTelefono)
+                                    .addComponent(txtApellidos, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
+                                    .addComponent(txtNombres)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(ButIngresarPasajero)
+                        .addGap(10, 10, 10)
+                        .addComponent(ButRevisarLista)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(ButCancelar)
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(16, 16, 16)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ButImportarDatos)
+                    .addComponent(Ruta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addComponent(ButConfirmar)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(InfoPasajero)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(299, 299, 299)
+                        .addGap(124, 124, 124)
                         .addComponent(jLabel9))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(ButImportarDatos)
-                            .addComponent(Ruta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(34, 34, 34)
-                        .addComponent(ButConfirmar)
-                        .addGap(18, 18, 18)
+                        .addGap(11, 11, 11)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(InfoPasajero)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(Nombre)
                                     .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -184,22 +188,17 @@ public class InterfazVuelo extends javax.swing.JFrame {
                                     .addComponent(Apellido))
                                 .addGap(33, 33, 33)
                                 .addComponent(Id))
-                            .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(38, 38, 38)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Tel))))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
-                        .addComponent(ButIngresarPasajero)
-                        .addGap(18, 18, 18)
-                        .addComponent(ButRevisarLista)
-                        .addContainerGap(22, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(ButCancelar)
-                        .addContainerGap())))
+                            .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Tel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ButRevisarLista)
+                    .addComponent(ButIngresarPasajero)
+                    .addComponent(ButCancelar))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pack();
@@ -226,28 +225,28 @@ public class InterfazVuelo extends javax.swing.JFrame {
             } catch (IOException e) {
             }
         } else {
-            JOptionPane.showMessageDialog(this, "No existe\n" + ruta, "ERROR", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "No se encuentra el archivo\n" + ruta, "ERROR", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_ButImportarDatosActionPerformed
 
     private void ButIngresarPasajeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButIngresarPasajeroActionPerformed
-        /*if (txtNombres.getText().equals("")){
-            JOptionPanel.showMessageDialog(null,"Por favor ingrese el nombre de el pasajero");
+        if (txtNombres.getText().equals("")){
+            JOptionPane.showMessageDialog(null,"Por favor ingrese el nombre de el pasajero");
             return;
         }
          if (txtApellidos.getText().equals("")){
-            JOptionPanel.showMessageDialog(null,"Por favor ingrese el apellido de el pasajero");
+            JOptionPane.showMessageDialog(null,"Por favor ingrese el apellido de el pasajero");
             return;
         }
          if (txtID.getText().equals("")){
-            JOptionPanel.showMessageDialog(null,"Por favor ingrese la identificacion de el pasajero");
+            JOptionPane.showMessageDialog(null,"Por favor ingrese la identificacion de el pasajero");
             return;
         }
          if (txtTelefono.getText().equals("")){
-            JOptionPanel.showMessageDialog(null,"Por favor ingrese el telefono  de el pasajero");
+            JOptionPane.showMessageDialog(null,"Por favor ingrese el telefono  de el pasajero");
             return;
         
-        */
+        
          
        
     }//GEN-LAST:event_ButIngresarPasajeroActionPerformed
@@ -273,6 +272,7 @@ public class InterfazVuelo extends javax.swing.JFrame {
     private javax.swing.JLabel Nombre;
     private javax.swing.JTextField Ruta;
     private javax.swing.JLabel Tel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField txtApellidos;
